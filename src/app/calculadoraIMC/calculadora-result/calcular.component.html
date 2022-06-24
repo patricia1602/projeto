@@ -1,14 +1,20 @@
 <div class="contaneir">
-  <div  class="row">
+
+  <div  class="d-grid gap-2 col-6 mx-auto">
     <div class="col">
       Peso:
-      <input type="number" [(ngModel)]="peso" class="form-control" step="0.010"/>
+      <input type="number" [(ngModel)]="peso" class="text-center" step="0.010"/>
     </div>
+
+    <div  class="row">
+      <div class="col">
     Altura:
     <div class="col">
-      <input type="number" [(ngModel)]="altura" class="form-control" step="0.010"/>
+      <input type="number" [(ngModel)]="altura" class="text-center" step="0.010"/>
     </div>
+
     <div class="row">
+      <div class="col">
       <br>
       <button type="button" name="button" (click)="calcularImc()" class="btn btn-outline-primary">Calcular</button>
     </div>
